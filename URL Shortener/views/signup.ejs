@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-    </style>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
-  </head>
-  <body>
-    <h1>Signup</h1>
-    <form action="/user" method="post">
-      <label>Full Name</label>
-      <input type="text" required name="name" />
-      <label>Email</label>
-      <input type="text" required name="email" />
-      <label>Password</label>
-      <input type="text" required name="password" />
+    <head>
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f8f9fa; /* Light gray background */
+                color: #333; /* Dark gray text color */
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Full height */
+            }
 
-      <button type="submit">Signup</button>
-    </form>
-  </body>
+            h1 {
+                text-align: center;
+                color: #007bff; /* Blue heading color */
+                margin-bottom: 30px; /* Bottom margin */
+            }
+
+            form {
+                background-color: #fff; /* White form background */
+                padding: 20px; /* Padding */
+                border-radius: 8px; /* Rounded corners */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+                width: 300px; /* Form width */
+            }
+
+            label {
+                display: block; /* Display block for better alignment */
+                margin-bottom: 5px; /* Bottom margin */
+                color: #6c757d; /* Gray label color */
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"] {
+                width: 100%; /* Full width */
+                padding: 10px; /* Padding */
+                margin-bottom: 10px; /* Bottom margin */
+                border: 1px solid #ced4da; /* Light gray border */
+                border-radius: 5px; /* Rounded corners */
+                transition: border-color 0.2s; /* Smooth transition for border color */
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus,
+            input[type="email"]:focus {
+                border-color: #007bff; /* Blue border color on focus */
+            }
+
+            button {
+                width: 100%; /* Full width */
+                padding: 10px; /* Padding */
+                background-color: #007bff; /* Blue button background color */
+                color: #fff; /* White button text color */
+                border: none; /* No border */
+                border-radius: 5px; /* Rounded corners */
+                cursor: pointer; /* Pointer cursor */
+                transition: background-color 0.2s; /* Smooth transition for background color */
+            }
+
+            button:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup</title>
+    </head>
+    <body>
+        <h1>Signup</h1>
+        <form action="/user" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" required name="email" />
+            <label for="password">Password</label>
+            <input type="password" id="password" required name="password" />
+
+            <button type="submit">Signup</button>
+        </form>
+    </body>
 </html>
