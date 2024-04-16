@@ -17,7 +17,7 @@ client.on("messageCreate", (message) => {
 });
 
 client.on("interactionCreate", (interaction) => {
-    interaction.reply("What is the similarity between an airplane and a woman? Both have cockpit")
+    interaction.reply("What do you call a fish without eyes? Fsh.")
 });
 
 client.login("MTIyOTc0NzkwNTQ0Mzc5MDg1OQ.Gt4YD7.LYDLrpGBaZRysT0a2fxHHbxzw878S1d1STP0Qc");
